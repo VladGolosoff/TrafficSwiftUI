@@ -11,6 +11,7 @@
 		14E986082799EF320092E289 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E986072799EF320092E289 /* ContentView.swift */; };
 		14E9860A2799EF340092E289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E986092799EF340092E289 /* Assets.xcassets */; };
 		14E9860D2799EF340092E289 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E9860C2799EF340092E289 /* Preview Assets.xcassets */; };
+		14E986162799FFD90092E289 /* ColorCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E986152799FFD90092E289 /* ColorCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		14E986072799EF320092E289 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14E986092799EF340092E289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E9860C2799EF340092E289 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14E986152799FFD90092E289 /* ColorCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				14E986052799EF320092E289 /* TrafficSwiftUIApp.swift */,
 				14E986072799EF320092E289 /* ContentView.swift */,
+				14E986152799FFD90092E289 /* ColorCircleView.swift */,
 				14E986092799EF340092E289 /* Assets.xcassets */,
 				14E9860B2799EF340092E289 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E986162799FFD90092E289 /* ColorCircleView.swift in Sources */,
 				14E986082799EF320092E289 /* ContentView.swift in Sources */,
 				14E986062799EF320092E289 /* TrafficSwiftUIApp.swift in Sources */,
 			);
