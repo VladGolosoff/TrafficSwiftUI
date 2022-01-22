@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var nextSignal = 0
+    // MARK: - Private properties
     
+    @State private var nextSignal = 0
     @State private var redLight = ColorCircleView(color: .red, opacity: 0.3)
     @State private var yellowLight = ColorCircleView(color: .yellow, opacity: 0.3)
     @State private var greenLight =  ColorCircleView(color: .green, opacity: 0.3)
+    
+    // MARK: - Public properties
     
     var body: some View {
         ZStack {
@@ -24,7 +27,7 @@ struct ContentView: View {
                     greenLight
                 }
                 .padding()
-                Spacer(minLength: 145)
+                Spacer(minLength: 180)
                 Button(action: {
                     switch nextSignal {
                     case 0:
@@ -42,27 +45,27 @@ struct ContentView: View {
                     default:
                         break
                     }
-                }) { Text("START").font(.title) }
-                .buttonStyle(.borderedProminent)
-                .buttonBorderShape(.capsule)
-                
-                
-            }
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-                .previewInterfaceOrientation(.portrait)
-                .preferredColorScheme(.dark)
-            
+                }) {
+                    if greenLight.opacity == 0.3 &&
+                        redLight.opacity == 0.3 &&
+                        yellowLight.opacity == 0.3 {
+                        Text("START").font(.title)
+                        
+                    } else {
+                        Text("NEXT").font(.title)
+                    }
+                }}
+            .buttonStyle(.borderedProminent)
         }
     }
 }
+// MARK: - Preview
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .previewInterfaceOrientation(.portrait)
+            .preferredColorScheme(.dark)
+        
+    }
+}
+
